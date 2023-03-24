@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	function esitahertat()
+	{
+		var k;
+		k = 4
+		while(k > 0)
+		{
+		    var kuvanimi;
+			kuvanimi = 'kuva' + k + '.jpg';			
+			var kuvatagi;
+			kuvatagi = "<img src='../galleria/" + kuvanimi + "'>";			
+			document.getElementById("korttikappale").innerHTML += kuvatagi;
+			k--
+		}		
+		document.getElementById("korttikappale").innerHTML += "<br>";	   
+	}
+	
+</script>
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<p id="korttikappale">
+	    <button type="button" onclick='esitahertat()'>Esitä galleria!</button>
+	</p>
+	<h1>Kuvagalleria</h1>
+	<p>Neljän kuvan kuvangalleria. Kuva suurenee klikkaamalla.</p>
+
+	<div class="col-md-4">
+		<div class="thumbnail">
+			<a href="../galleria/kuva1.jpg" target="_blank">
+			<img src="../galleria/kuva1.jpg" alt="Nature" style="width:100%">
+			<div class="caption">
+				<p>Vanhan autiotalon seinä.</p>
+			</div>
+			</a>
+		</div>
+		</div>
+
+	<div class="col-md-4">
+		<div class="thumbnail">
+			<a href="../galleria/kuva3.jpg" target="_blank">
+			<img src="../galleria/kuva3.jpg" alt="Nature" style="width:100%">
+			<div class="caption">
+				<p>Toinen vanha autiotalo</p>
+			</div>
+			</a>
+		</div>
+		</div>
+
+	<div class="col-md-4">
+		<div class="thumbnail">
+			<a href="../galleria/kuva4.jpg" target="_blank">
+			<img src="../galleria/kuva4.jpg" alt="Nature" style="width:100%">
+			<div class="caption">
+				<p>Kerrostalon pihaa</p>
+			</div>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
