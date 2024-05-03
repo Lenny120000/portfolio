@@ -53,7 +53,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-MEDIA_ROOT = 'tuotelista/uploads'
+MEDIA_ROOT = 'snippets/uploads'
 
 MEDIA_URL = 'media/'
 

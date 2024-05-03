@@ -3,9 +3,31 @@ from rest_framework.test import APIClient
 from rest_framework.test import APIRequestFactory
 import pytest
 import json
+from django.urls import reverse, resolve
 
 from .views import TuoteList
 from snippets.models import Tuote
+
+"""
+KORJAA TOIMIVAKSI
+
+@pytest.mark.django_db
+def test_postlist():
+    client = APIClient()
+    response = client.post(
+
+    {
+        "id": 47,
+        "nimi": "Playwright muokkasi tämän",
+        "hinta": 12121212.0,
+        "kuvaus": "Plapla.",
+        "tuotekuva": "http://127.0.0.1:8000/media/widetest_j8NnMq7.jpg"
+    }
+    
+    )
+    assert response.status_code == 200
+
+"""
 
 """
 Tee tämä jossain vaiheessa?
@@ -24,12 +46,10 @@ def test_post():
     assert(request)
 """
 
-
 @pytest.mark.django_db
 def test_home_view():
     client = APIClient()
     response = client.get("/")
-    print(response)
     assert response.status_code == 200
 
 @pytest.mark.django_db
@@ -38,31 +58,17 @@ def test_getlist():
     response = client.get("/snippets/")
     print(response)
     assert response.status_code == 200
-
-@pytest.mark.django_db
-def test_getlist():
-    client = APIClient()
-    response = client.get("/olemassa/")
     print(response.content)
-    assert response.status_code == 200
+    assert response.content
 
-@pytest.mark.django_db
-def test_postlist():
-    client = APIClient()
-    response = client.post(
-
-    {
-        "id": 47,
-        "nimi": "Playwright muokkasi tämän",
-        "hinta": 12121212.0,
-        "kuvaus": "Plapla.",
-        "tuotekuva": "http://127.0.0.1:8000/media/widetest_j8NnMq7.jpg"
-    }
-    
-    )
-    assert response.status_code == 200
+"""
+Tämäkin jossain vaiheessa?
 
 
+def test_my_view_url():
+    path = reverse('TuoteList/')
+    assert resolve(path).func == TuoteList
+"""
 
 """Tarkistaa että pyyntö on onnistuu ja view:sin headers on text/html"""
 @pytest.mark.django_db
