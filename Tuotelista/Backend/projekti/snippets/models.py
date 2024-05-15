@@ -10,9 +10,9 @@ STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 
 class Tuote(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    nimi = models.TextField(default='')
-    hinta = models.FloatField(default=0)
-    kuvaus = models.TextField(default='')
+    nimi = models.TextField(default='', max_length=100)
+    hinta = models.FloatField(default=0, max_length=250)
+    kuvaus = models.TextField(default='', max_length=250)
     tuotekuva = models.ImageField(default='')
 
     class Meta:
