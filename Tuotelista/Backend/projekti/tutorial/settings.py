@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'snippets',
+    'tuote',
     'corsheaders',
 ]
 
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
 ]
 
-MEDIA_ROOT = 'snippets/uploads'
+MEDIA_ROOT = 'tuote/uploads'
 
 MEDIA_URL = 'media/'
 
