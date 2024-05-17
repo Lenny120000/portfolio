@@ -59,7 +59,7 @@ MEDIA_URL = 'media/'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-ROOT_URLCONF = 'tutorial.urls'
+ROOT_URLCONF = 'verkkokauppa.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tutorial.wsgi.application'
+WSGI_APPLICATION = 'verkkokauppa.wsgi.application'
 
 
 # Database

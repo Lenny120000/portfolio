@@ -20,5 +20,5 @@ from tuote.views import *
 urlpatterns = [
     path('', include('tuote.urls')),
     path('', ReactView.as_view(), name="anything"),
-    path('api/', include('tutorial.api.urls')),
+    path('api/', include('verkkokauppa.api.urls')),
 ]
