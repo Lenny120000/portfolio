@@ -13,7 +13,7 @@ class TuoteFactory(factory.django.DjangoModelFactory):
     kuvaus = "tehtaasta tuotettu"
     tuotekuva = ContentFile(
             open("./tuote/tests/widetest.jpg", "rb").read(),
-            name=f"{timezone.now().timestamp()}.jpeg",
+            name="widetest.jpg",
         )
     #SimpleUploadedFile(name='puhelin.jpg', content=open("./tuote/tests/puhelin.jpg", 'rb').read(), content_type='image/jpeg')
     #factory.django.ImageField()

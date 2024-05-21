@@ -73,7 +73,7 @@ class TestClient:
             "kuvaus": "tehtaasta tuotettu",
             "tuotekuva": ContentFile(
             open("./tuote/tests/widetest.jpg", "rb").read(),
-            name=f"{timezone.now().timestamp()}.jpeg",
+            name=f"widetest.jpg",
         ),
         }
 

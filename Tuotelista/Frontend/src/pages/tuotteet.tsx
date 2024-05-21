@@ -3,7 +3,7 @@ import axios from 'axios'
 export const fetchTuotteet = async () => {
 
   try {
-    const response = await  axios.get('http://localhost:8000/snippets/ReactView')
+    const response = await  axios.get('http://localhost:8000/tuote/ReactView')
     return response.data
   }
   catch(error) {
@@ -15,7 +15,7 @@ export const muokkausLoader = async ({ params } : { params:any }) => {
   const { id } = params
 
   try {
-    const response = await axios.get('http://localhost:8000/snippets/' + id )
+    const response = await axios.get('http://localhost:8000/tuote/' + id )
 
     return response.data
   }

@@ -82,11 +82,11 @@ export const muokkaaTuote = async({request}: FieldValues) => {
   try { 
     
     if (intent === 'muokkaa') {
-      await axios.put('http://localhost:8000/snippets/' + submission.id, submission, {headers: { "Content-Type": "multipart/form-data" }})
+      await axios.put('http://localhost:8000/tuote/' + submission.id, submission, {headers: { "Content-Type": "multipart/form-data" }})
       return redirect('/muokkaatuote')
     } 
     else if (intent === 'poista') {
-      await axios.delete('http://localhost:8000/snippets/' + submission.id)
+      await axios.delete('http://localhost:8000/tuote/' + submission.id)
       return redirect('/muokkaatuote')
     }
     }

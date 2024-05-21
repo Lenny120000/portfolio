@@ -45,7 +45,7 @@ export const postTuote = async({request}: FieldValues) => {
   }
   try {
     await axios.post(
-      'http://localhost:8000/snippets/', submission, {headers: { "Content-Type": "multipart/form-data" }}
+      'http://localhost:8000/tuote/', submission, {headers: { "Content-Type": "multipart/form-data" }}
     )
     return redirect('/')
   }
