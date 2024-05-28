@@ -1,7 +1,6 @@
 import json
 from rest_framework.test import APIClient
 
-
 class TestTuoteModel:
     endpoint = "/tuote/"
     client = APIClient()

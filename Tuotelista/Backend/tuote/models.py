@@ -1,7 +1,7 @@
-from rest_framework import serializers
 from django.db import models
 from pygments.lexers import get_all_lexers
 from pygments.styles import get_all_styles
+
 
 LEXERS = [item for item in get_all_lexers() if item[1]]
 LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
@@ -14,6 +14,7 @@ class TuoteModel(models.Model):
     hinta = models.FloatField(default=0, max_length=250)
     kuvaus = models.TextField(default='', max_length=250)
     tuotekuva = models.ImageField(default='')
+    owner = models.ForeignKey('auth.User', default='', related_name='tuote', on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['created']

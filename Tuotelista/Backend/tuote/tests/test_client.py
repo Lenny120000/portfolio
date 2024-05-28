@@ -1,6 +1,4 @@
-import json
 from rest_framework.test import APIClient
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.forms.models import model_to_dict
 
 client = APIClient()
@@ -12,7 +10,6 @@ def test_client_get():
     response = client.get("/tuote/")
     assert response.status_code == 200
 
-
 def test_client_post(clienttuote):
     assert clienttuote.status_code == 201
     data = clienttuote.data
@@ -22,8 +19,6 @@ def test_client_post(clienttuote):
     assert data["hinta"] == 4447777.0
     assert data["kuvaus"] == "Pla." 
     assert data["tuotekuva"] is not None
-    
-
 
 def test_client_put(tuote_factory):
     factory = tuote_factory()

@@ -1,7 +1,5 @@
 import factory
 from ..models import TuoteModel
-from django.utils import timezone
-from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.files.base import ContentFile
 
 class TuoteFactory(factory.django.DjangoModelFactory):

@@ -3,6 +3,24 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from rest_framework.test import APIRequestFactory
 from ..views import TuoteList, TuoteDetail
 
+"""
+Ongelmia kirjautumisen kanssa? Kokeile tätä komennolla (muut unittest testit kannattaa kommentoida ensin pois): 
+
+python manage.py test tuote.tests -v 2 
+
+Jos testi toimii, katso vielä jos uusi luotu käyttäjä toimii.
+
+class AuthTestCase(TestCase):
+    def setUp(self):
+        self.u = User.objects.create_user('admin', 'admin@example.com', 'pass')
+        self.u.is_staff = True
+        self.u.is_superuser = True
+        self.u.is_active = True
+        self.u.save()
+
+    def testLogin(self):
+        self.client.login(username='admin', password='pass')
+"""
 factory = APIRequestFactory()
 
 """Tarkistaa että pyyntö onnistuu ja view:sin headers on text/html"""

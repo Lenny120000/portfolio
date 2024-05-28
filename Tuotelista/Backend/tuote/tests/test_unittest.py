@@ -1,10 +1,7 @@
 import shutil
-from django.conf import settings
 from django.utils import timezone
 
 from rest_framework.test import APITestCase, override_settings
-from django.core.files.uploadedfile import SimpleUploadedFile
-from django.forms.models import model_to_dict
 from django.core.files.base import ContentFile
 
 from tuote.models import TuoteModel
