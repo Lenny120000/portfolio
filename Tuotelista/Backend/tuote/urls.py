@@ -10,15 +10,15 @@ product_router = DefaultRouter()
 
 product_router.register(r'products', TuoteViewSet)
 
-urlpatterns = [
-    path('tuote/', views.TuoteList.as_view()),
-    path('tuote/<int:pk>', views.TuoteDetail.as_view()),
-    path('tuote/uploads/', views.TuoteImage.as_view()),
-    path('tuote/ReactView', views.ReactView.as_view()),
-    path('users/', views.UserList.as_view()),
-    path('users/<int:pk>', views.UserDetail.as_view()),
+urlpatterns = format_suffix_patterns([
+    path('', views.api_root),
+    path('tuote/', views.TuoteList.as_view(), name='tuote-list'),
+    path('tuote/<int:pk>', views.TuoteDetail.as_view(), name='tuote-detail'),
+    path('tuote/uploads/', views.TuoteImage.as_view(), name='tuote-image'),
+    path('tuote/ReactView', views.ReactView.as_view(), name='tuote-react'),
+    path('users/', views.UserList.as_view(), name='user-list'),
+    path('users/<int:pk>', views.UserDetail.as_view(), name='user-detail'),
     path('api-auth/logout/', LogoutView.as_view(), name='logout'),
     path('api-auth/', include('rest_framework.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-urlpatterns = format_suffix_patterns(urlpatterns) 
