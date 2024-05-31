@@ -5,6 +5,7 @@ from .views import LogoutView, TuoteViewSet
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
+from django.contrib import admin
 
 product_router = DefaultRouter()
 
@@ -20,5 +21,6 @@ urlpatterns = format_suffix_patterns([
     path('users/<int:pk>', views.UserDetail.as_view(), name='user-detail'),
     path('api-auth/logout/', LogoutView.as_view(), name='logout'),
     path('api-auth/', include('rest_framework.urls')),
+    path('admin/', admin.site.urls),
 ]) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

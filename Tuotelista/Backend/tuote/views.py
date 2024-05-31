@@ -1,4 +1,4 @@
-from tuote.permissions import IsOwnerOrReadOnly
+from tuote.permissions import IsAdminUserOrReadOnly
 from .models import TuoteModel
 from .serializers import UserSerializer
 from .serializers import TuoteSerializer
@@ -25,7 +25,7 @@ def api_root(request, format=None):
 class TuoteList(generics.ListCreateAPIView):
     queryset = TuoteModel.objects.all()
     serializer_class = TuoteSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsAdminUserOrReadOnly]
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
@@ -33,7 +33,7 @@ class TuoteList(generics.ListCreateAPIView):
 class TuoteDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = TuoteModel.objects.all()
     serializer_class = TuoteSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsAdminUserOrReadOnly]
 
 class TuoteImage(generics.RetrieveAPIView):
     queryset = TuoteModel.objects.all()
