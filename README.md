@@ -15,6 +15,7 @@ npm run dev
 
 cmd:ssä tee näin(se tarvitsee administration oikeuksia tehdä näin) : 
 
+
 python manage.py runserver
 
 python manage.py makemigrations tuote
