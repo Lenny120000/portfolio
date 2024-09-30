@@ -15,6 +15,8 @@ npm run dev
 
 Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
 
+py -m venv .venv
+
 .venv\Scripts\activate
 
 cd backend
