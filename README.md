@@ -13,7 +13,8 @@ npm run dev
 
 # Backend
 
-cmd:ssä tee näin(se tarvitsee administration oikeuksia tehdä näin) : 
+Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
+
 
 
 python manage.py runserver
