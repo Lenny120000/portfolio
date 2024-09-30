@@ -15,7 +15,9 @@ npm run dev
 
 Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
 
+.venv\Scripts\activate
 
+cd backend
 
 python manage.py runserver
 
