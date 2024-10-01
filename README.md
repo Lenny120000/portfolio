@@ -2,7 +2,11 @@
 
 Tervetuloa!
 
-# Tuotelista ohjeet:
+# Tuotelista:
+
+Vite + Django
+
+Tarvitset ennen ohjeita nämä paketit: npm, python ja node.js
 
 HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
 
