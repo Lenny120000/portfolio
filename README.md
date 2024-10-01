@@ -6,7 +6,7 @@ Tervetuloa!
 
 Vite + Django
 
-Tarvitset ennen ohjeita nämä paketit: npm, python ja node.js
+Tarvitset ennen ohjeita nämä paketit: python ja node.js
 
 HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
 
