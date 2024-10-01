@@ -21,6 +21,8 @@ py -m venv .venv
 
 cd backend
 
+pip install -r requirements.txt
+
 python manage.py runserver
 
 python manage.py makemigrations tuote
