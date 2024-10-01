@@ -24,10 +24,6 @@ pip install -r requirements.txt
 
 python manage.py runserver
 
-python manage.py makemigrations tuote
-
-python manage.py migrate tuote
-
 
 # Frontend
 
