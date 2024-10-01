@@ -18,7 +18,7 @@ py -m venv .venv
 
 .venv\Scripts\activate
 
-cd backend
+cd Backend
 
 pip install -r requirements.txt
 
