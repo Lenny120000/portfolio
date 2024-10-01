@@ -4,6 +4,8 @@ Tervetuloa!
 
 # Tuotelista ohjeet:
 
+HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
+
 # Backend
 
 Avaa cmd Tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa Tuotelista kansiossa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
