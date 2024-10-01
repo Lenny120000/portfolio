@@ -25,7 +25,7 @@ python manage.py migrate tuote
 
 # Frontend
 
-Avaa samalla tavalla kuin Backend:
+Avaa Frontend kansio ja kirjoita cmd osoitepalkkiin:
 
 npm install
 
