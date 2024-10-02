@@ -12,7 +12,7 @@ HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
 
 # Backend
 
-Avaa cmd Tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa Tuotelista kansiossa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
+Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa Tuotelista kansiossa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
 
 py -m venv .venv
 
