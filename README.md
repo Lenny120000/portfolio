@@ -10,13 +10,11 @@ HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
 
 Tarvitset ennen ohjeita nämä paketit: python ja node.js
 
+- Nämä linkit toimivat kun saat backendin ja frontendin käyntiin
 
+- Nettisivu: http://localhost:5173/
 
-Nämä linkit toimivat kun saat backendin ja frontendin käyntiin
-
-Nettisivu: http://localhost:5173/
-
-Django: http://127.0.0.1:8000/
+- Django: http://127.0.0.1:8000/
 
 
 
