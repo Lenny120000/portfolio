@@ -12,7 +12,7 @@ Vite + Django
 
 HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
 
-Tarvitset ennen ohjeita nämä paketit: python ja node.js
+Tarvitset ennen ohjeita nämä paketit: Python ja Node.js
 
 Nämä linkit toimivat kun saat backendin ja frontendin käyntiin
 
