@@ -9,8 +9,14 @@ class TuoteSerializer(serializers.HyperlinkedModelSerializer):
         model = TuoteModel
         fields = ['id', 'nimi', 'hinta', 'kuvaus', 'tuotekuva', 'owner']
 
+"""
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     tuote = serializers.HyperlinkedRelatedField(many=True, view_name='tuote-detail', read_only=True)
     class Meta:
         model = User
         fields = ['id', 'username', 'tuote']
+
+class LoginSerializer(serializers.Serializer):
+    nimi = serializers.CharField()
+    salasana = serializers.CharField()
+"""
