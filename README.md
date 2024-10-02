@@ -2,6 +2,10 @@
 
 Tervetuloa!
 
+Saat portfolion kansioksi tällä cmd komennolla:
+
+- `git clone https://github.com/Lenny120000/portfolio`
+
 # Tuotelista:
 
 Vite + Django
@@ -16,7 +20,9 @@ Nämä linkit toimivat kun saat backendin ja frontendin käyntiin
 
   - Django: http://127.0.0.1:8000/
 
-# Backend
+# Ohjeet
+
+BACKEND
 
 Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssienhallinnan osoitepalkisssa tuotelista kansiossa, se varmaan myös tarvitsee ylläpitäjän oikeuksia tehdä seuraavat komennot : 
 
@@ -31,7 +37,7 @@ Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssi
   - `python manage.py runserver`
 
 
-# Frontend
+FRONTEND
 
 Avaa tuotelista-frontend kansio ja kirjoita cmd osoitepalkkiin:
 
