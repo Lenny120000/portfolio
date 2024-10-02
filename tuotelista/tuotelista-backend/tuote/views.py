@@ -1,7 +1,7 @@
 import json
 from django import forms
 from django.http import HttpRequest, HttpResponse, JsonResponse
-from .forms import LoginForm
+#from .forms import LoginForm
 from tuote.permissions import IsAdminUserOrReadOnly
 from .models import TuoteModel
 from .serializers import TuoteSerializer#, LoginSerializer, UserSerializer
