@@ -49,7 +49,7 @@ export default function App() {
                   <CardMedia sx={{ height: 295}} image={message.tuotekuva}/>
                   <CardContent >
                     <Typography gutterBottom variant="h5" component="div"> {message.nimi} </Typography>
-                    <Typography >{message.hinta} </Typography>
+                    <Typography >{message.hinta} € </Typography>
                     <Typography >{message.kuvaus} </Typography>
                   </CardContent>
                 </Card>
