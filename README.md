@@ -18,7 +18,7 @@ py -m venv .venv
 
 .venv\Scripts\activate
 
-cd Backend
+cd tuotelista-backend
 
 pip install -r requirements.txt
 
@@ -27,7 +27,7 @@ python manage.py runserver
 
 # Frontend
 
-Avaa Frontend kansio ja kirjoita cmd osoitepalkkiin:
+Avaa tuotelista-frontend kansio ja kirjoita cmd osoitepalkkiin:
 
 npm install
 
