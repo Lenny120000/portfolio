@@ -14,7 +14,7 @@ class TuoteModel(models.Model):
     hinta = models.FloatField(default=0, max_length=250)
     kuvaus = models.TextField(default='', max_length=250)
     tuotekuva = models.ImageField(default='')
-    owner = models.ForeignKey('auth.User', default='', related_name='tuote', on_delete=models.CASCADE)
+    #owner = models.ForeignKey('auth.User', default='', related_name='tuote', on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['created']
