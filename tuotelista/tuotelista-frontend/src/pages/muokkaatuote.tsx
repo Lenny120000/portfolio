@@ -50,7 +50,7 @@ export default function Muokkaatuote() {
                   <CardMedia sx={{ height: 295}} image={message.tuotekuva}/>
                   <CardContent >
                     <Typography gutterBottom variant="h5" component="div"> {message.nimi} </Typography>
-                    <Typography >{message.hinta} </Typography>
+                    <Typography >{message.hinta} € </Typography>
                     <Typography >{message.kuvaus} </Typography>
                     <Button component={RouterLink} to={message.id.toString()} key={message.id}  variant="contained" sx={{ mt: 3 }} >Muokkaa</Button>      
                   </CardContent>
