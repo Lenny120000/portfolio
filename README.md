@@ -30,8 +30,6 @@ Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssi
 
   - `.venv\Scripts\activate`
 
-  - `pip install djangorestframework`
-
   - `cd tuotelista-backend`
 
   - `pip install -r requirements.txt`
