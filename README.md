@@ -20,6 +20,8 @@ Nämä linkit toimivat kun saat backendin ja frontendin käyntiin
 
   - Django: http://127.0.0.1:8000/
 
+Luo pari tuotetta ja näet miltä näyttävät sivuissa ja backendissä.
+
 # Ohjeet
 
 BACKEND
@@ -33,7 +35,11 @@ Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssi
   - `cd tuotelista-backend`
 
   - `pip install -r requirements.txt`
+    
+  - `python manage.py makemigrations tuote`
 
+  - `python manage.py migrate tuote`
+    
   - `python manage.py runserver`
 
 
