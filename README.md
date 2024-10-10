@@ -20,6 +20,8 @@ Nämä linkit toimivat kun saat backendin ja frontendin käyntiin
 
   - Django: http://127.0.0.1:8000/
 
+Luo pari tuotetta ja näet miltä näyttävät sivuissa ja backendissä.
+
 # Ohjeet
 
 BACKEND
