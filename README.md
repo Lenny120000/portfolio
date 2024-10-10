@@ -33,7 +33,11 @@ Avaa cmd tuotelista kansiossa, voit tehdä tämän kirjoittamalla "cmd" resurssi
   - `cd tuotelista-backend`
 
   - `pip install -r requirements.txt`
+    
+  - `python manage.py makemigrations tuote`
 
+  - `python manage.py migrate tuote`
+    
   - `python manage.py runserver`
 
 
