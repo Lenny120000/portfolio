@@ -2,6 +2,12 @@
 
 Tervetuloa!
 
+Sisältää:
+
+- Pieniä Python-ohjelmia
+
+- Tuotelista projekti, jossa luodaan, poistetaan ja muokataan tuotteita.
+
 Saat portfolion kansioksi tällä cmd komennolla:
 
 - `git clone https://github.com/Lenny120000/portfolio`
