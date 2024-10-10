@@ -14,7 +14,7 @@ Saat portfolion kansioksi tällä cmd komennolla:
 
 # Tuotelista:
 
-Vite + Django
+Vite React + Django
 
 HUOM! Nämä ohjeet ovat Windows-käyttöjärjestelmälle.
 
