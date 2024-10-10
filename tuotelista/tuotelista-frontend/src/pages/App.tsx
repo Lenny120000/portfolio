@@ -54,8 +54,8 @@ export default function App() {
               item 
             >
               <Item>
-                <Card sx={{ width: 345 }} variant="outlined" >
-                  <CardMedia sx={{ height: 295}} image={message.tuotekuva}/>
+                <Card sx={{ width: 250 }} variant="outlined" >
+                  <CardMedia sx={{ height: 250}} image={message.tuotekuva}/>
                   <CardContent >
                     <Typography gutterBottom variant="h5" component="div"> {message.nimi} </Typography>
                     <Typography> {message.hinta} € </Typography>
