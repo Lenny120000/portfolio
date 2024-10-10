@@ -46,7 +46,7 @@ export default function App() {
         spacing={2} 
         columns={17}
         sx={{overflow:"auto"}}
-        wrap="nowrap"
+        wrap="wrap"
       >
         {message.map(message => (
             <Grid 

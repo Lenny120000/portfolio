@@ -42,9 +42,9 @@ export default function Muokkaatuote() {
     <Divider sx={{ my: 2 }} />
 
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} columns={17}>
+      <Grid container spacing={2} columns={17} sx={{overflow:"auto"}} wrap="wrap">
         {message.map(message => (
-            <Grid key={message.id} item xs={4}>
+            <Grid key={message.id} item>
               <Item>
                 <Card sx={{ width: 345 }} variant="outlined">
                   <CardMedia sx={{ height: 295}} image={message.tuotekuva}/>
