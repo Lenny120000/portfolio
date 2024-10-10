@@ -4,10 +4,10 @@ from django.contrib.auth.models import User
 
 
 class TuoteSerializer(serializers.HyperlinkedModelSerializer):
-    owner = serializers.ReadOnlyField(source='owner.username')
+    #owner = serializers.ReadOnlyField(source='owner.username')
     class Meta:
         model = TuoteModel
-        fields = ['id', 'nimi', 'hinta', 'kuvaus', 'tuotekuva', 'owner']
+        fields = ['id', 'nimi', 'hinta', 'kuvaus', 'tuotekuva'] #', owner'
 
 """
 class UserSerializer(serializers.HyperlinkedModelSerializer):
