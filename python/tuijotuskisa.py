@@ -77,7 +77,7 @@ class Sankari:
     def arvo_hurraus(self):
         """Metodi arvo_hurraus antaa satunnaisen HURRAUKSET listasta ja palauttaa sen.
         """
-        HURRAUKSET = ["FRAAAG!!!", "TAKE THIS!", "MUST FRAG!", "SIR YES SIR OORAH!", "RAAAGH!!"]
+        HURRAUKSET = ["TAKE THIS!", "SIR YES SIR OORAH!", "RAAAGH!!"]
         return random.choice(HURRAUKSET)
 
 
