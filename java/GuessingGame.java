@@ -55,7 +55,6 @@ public class GuessingGame {
         System.out.println("Out of lives, you lose!");
         System.out.println("Correct number was: " + correctNumber);
       }
-      myGuess.myScan.close();
 
     }
 
