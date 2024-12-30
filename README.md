@@ -8,6 +8,8 @@ Sisältää:
 
 - Tuotelista projekti, jossa luodaan, poistetaan ja muokataan tuotteita.
 
+- Oma nettisivu: http://galleria.ddnsfree.com
+
 Saat portfolion kansioksi tällä cmd komennolla:
 
 - `git clone https://github.com/Lenny120000/portfolio`
